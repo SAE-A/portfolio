@@ -24,7 +24,7 @@ function Home() {
                             Design-Focused Developer Turning Ideas Into Elegant Interfaces
                         </p>
                         <div className="hero-buttons">
-                            <a href="/projects" className="btn btn-pink">View My Work</a>
+                            <a href="#projects" className="btn btn-pink">View My Work</a>
                             <a href="#contact" className="btn btn-pink">Let's Connect</a>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ function Home() {
                         </div>
 
                         <div className="view-more-wrapper" style={{ textAlign: "center", marginTop: "30px" }}>
-                            <a href="/projects" className="view-more-btn">View More ...</a>
+                            <a href="#projects" className="view-more-btn">View More ...</a>
                         </div>
                     </div>
                 </section>

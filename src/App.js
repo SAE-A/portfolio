@@ -1,6 +1,6 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import "./styles.css";
 
 import Home from './pages/Home';
@@ -13,11 +13,11 @@ function App() {
         <nav>
           <div className="logo">Saeah Kim</div>
           <ul className="nav-links">
-            <li><Link to="/">Home</Link></li>
-            <li><HashLink smooth to="/#about">About</HashLink></li>
-            <li><HashLink smooth to="/#skills">Skills</HashLink></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><HashLink smooth to="/#contact">Contact</HashLink></li>
+            <li><Link smooth to="/#home">Home</Link></li>
+            <li><Link smooth to="/#about">About</Link></li>
+            <li><Link smooth to="/#skills">Skills</Link></li>
+            <li><Link smooth to="/projects">Projects</Link></li>
+            <li><Link smooth to="/#contact">Contact</Link></li>
           </ul>
         </nav>
       </header>
