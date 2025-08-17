@@ -820,3 +820,11 @@ footer {
   text-shadow: 0 0 8px var(--hot-pink);
 }
 
+@media screen and (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

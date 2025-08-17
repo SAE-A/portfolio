@@ -87,20 +87,6 @@ function Projects() {
         <div className="floating-shape"></div>
       </div>
 
-      {/* Header */}
-      <header>
-        <nav>
-          <div className="logo">Saeah Kim</div>
-          <ul className="nav-links">
-            <li><Link to="/">Home</Link></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#skills">Skills</a></li>
-            <li><Link to="/#projects">Projects</Link></li>
-            <li><a href="/#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-
       {/* Projects Section */}
       <section id="projects" className="section">
         <div className="container">
