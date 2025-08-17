@@ -85,7 +85,7 @@ function Home() {
                         <div className="project-grid">
                             <div className="project-card">
                                 <div className="project-logo-wrapper">
-                                    <img src="/images/ct_logo.png" alt="Culture & Trip App Logo" className="project-logo-ct" />
+                                    <img src={`${process.env.PUBLIC_URL}/images/ct_logo.png`} alt="Culture & Trip App Logo" className="project-logo-ct" />
                                 </div>
                                 <h3>Culture & Trip: AI-Powered Travel Planner App</h3>
                                 <p className="project-date">Feb 2025 – Jun 2025</p>
@@ -101,7 +101,7 @@ function Home() {
 
                             <div className="project-card">
                                 <div className="project-logo-wrapper">
-                                    <img src="/images/dm_logo.png" alt="Diary Music App Logo" className="project-logo-dm" />
+                                    <img src={`${process.env.PUBLIC_URL}/images/dm_logo.png`} alt="Diary Music App Logo" className="project-logo-dm" />
                                 </div>
                                 <h3>Diary Music: Emotion-Based Music Recommendation App</h3>
                                 <p className="project-date">Sep 2024 – Dec 2024</p>
