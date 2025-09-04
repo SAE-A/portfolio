@@ -141,7 +141,7 @@ function Home() {
                         </ul>
 
                         <p>Check out my GitHub:</p>
-                        <a href="https://github.com/" target="_blank" rel="noreferrer">https://github.com/</a>
+                        <a href="https://github.com/SAE-A" target="_blank" rel="noreferrer">https://github.com/SAE-A</a>
                     </div>
                 </section>
             </main>
