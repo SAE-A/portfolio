@@ -343,10 +343,6 @@ nav {
     border-color: var(--hot-red);
 }
 
-.skill-item:hover {
-    transform: scale(1.08) rotate(2deg);
-}
-
 .skill-item:nth-child(odd):hover {
     box-shadow: 0 20px 40px var(--shadow-blue);
     background: var(--accent-blue);
@@ -377,6 +373,20 @@ nav {
     color: var(--text-dark);
     text-transform: uppercase;
     letter-spacing: 1px;
+    overflow-wrap: break-word;
+}
+
+@media (hover: hover) {
+    .skill-item:hover {
+        transform: scale(1.08) rotate(2deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 /* Projects */
