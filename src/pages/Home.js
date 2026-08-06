@@ -25,7 +25,9 @@ function Home() {
                         </p>
                         <div className="hero-buttons">
                             <a href="#projects" className="btn btn-pink">View My Work</a>
-                            <a href="#contact" className="btn btn-pink">Let's Connect</a>
+                            <button className="btn btn-pink" onClick={() => {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"});}}>
+                                Let's Connect
+                            </button>
                         </div>
                     </div>
                 </section>
@@ -40,19 +42,26 @@ function Home() {
                                 <p>
                                     <strong>Bachelor of Computer Engineering</strong><br />
                                     Hansung University, Seoul, South Korea<br />
-                                    Expected Graduation: Feb 2026 | GPA: 3.8/4.0<br /><br />
-                                </p>
-                                <p>
-                                    Skilled in HTML, CSS, and JavaScript, with experience in C and Java.
+                                    Expected Graduation: Feb 2026 | GPA: 3.8/4.5<br /><br />
                                 </p>
                             </div>
 
                             <div className="card pink-accent">
                                 <h3>🚀 Career Goals</h3>
                                 <p>
-                                    Seeking front-end opportunities to create intuitive, user-centered designs while growing my technical expertise.<br />
-                                    Driven to build engaging interfaces and enhance user experience.<br />
-                                    Passionate about teamwork, innovation, and delivering quality code.
+                                    Frontend-focused developer with hands-on experience in web application development and ERP systems.<br />
+                                    Interested in building intuitive, user-centered applications while continuously improving technical expertise.
+                                </p>
+                            </div>
+
+                            <div className="card purple-accent experience-card">
+                                <h3>💼 Experience</h3>
+                                <p>
+                                    <strong>Software Developer Intern</strong><br />
+                                    Woongjin, Inc. | Jan 2026 – Aug 2026<br /><br />
+                                    • Maintained and customized <strong>ERP systems</strong> and e-commerce platforms based on client requirements.<br />
+                                    • Developed and updated web applications using <strong>React, JavaScript, HTML, CSS, PHP, and MSSQL</strong>.<br />
+                                    • Investigated and resolved software issues while providing production support for business systems.
                                 </p>
                             </div>
                         </div>
@@ -64,16 +73,16 @@ function Home() {
                     <div className="container">
                         <h2 className="section-title black-accent">TECHNICAL SKILLS</h2>
                         <div className="skills-container">
-                            <div className="skill-item"><span className="skill-icon">🌐</span><div className="skill-name">HTML / CSS / JavaScript</div></div>
                             <div className="skill-item"><span className="skill-icon">⚛️</span><div className="skill-name">React / React Native</div></div>
-                            <div className="skill-item"><span className="skill-icon">🎨</span><div className="skill-name">UI/UX Design</div></div>
+                            <div className="skill-item"><span className="skill-icon">🌐</span><div className="skill-name">JavaScript</div></div>
+                            <div className="skill-item"><span className="skill-icon">🎨</span><div className="skill-name">HTML / CSS</div></div>
+                            <div className="skill-item"><span className="skill-icon">🧩</span><div className="skill-name">ASP (VBScript)</div></div>
+                            <div className="skill-item"><span className="skill-icon">🗄️</span><div className="skill-name">MSSQL (Microsoft SQL Server)</div></div>
+                            <div className="skill-item"><span className="skill-icon">🖥️</span><div className="skill-name">PHP</div></div>
                             <div className="skill-item"><span className="skill-icon">🛠️</span><div className="skill-name">Node.js</div></div>
                             <div className="skill-item"><span className="skill-icon">🔥</span><div className="skill-name">Firebase</div></div>
+                            <div className="skill-item"><span className="skill-icon">🖌️</span><div className="skill-name">UI/UX Design</div></div>
                             <div className="skill-item"><span className="skill-icon">📱</span><div className="skill-name">Swift</div></div>
-                            <div className="skill-item"><span className="skill-icon">🧠</span><div className="skill-name">AI</div></div>
-                            <div className="skill-item"><span className="skill-icon">🗄️</span><div className="skill-name">SQL / Databases</div></div>
-                            <div className="skill-item"><span className="skill-icon">📊</span><div className="skill-name">Microsoft Office Suite (Excel, Word, PowerPoint, Access)</div></div>
-                            <div className="skill-item"><span className="skill-icon">🖌️</span><div className="skill-name">Adobe Photoshop</div></div>
                         </div>
                     </div>
                 </section>

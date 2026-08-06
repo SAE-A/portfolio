@@ -7,14 +7,17 @@
 :root {
     --hot-pink: #E0218A;
     --hot-red: #E02155;
+    --hot-purple: #8B5CF6;
     --light-bg: #FADADD;
     --card-bg: whitesmoke;
     --text-dark: #1e293b;
     --text-light: #64748b;
     --accent-blue: #e0f2fe;
     --accent-pink: #fce7f3;
+    --accent-purple: #ede9fe;
     --shadow-blue: rgba(75, 153, 236, 0.2);
     --shadow-pink: rgba(255, 17, 102, 0.2);
+    --shadow-purple: rgba(139, 92, 246, 0.2);
 }
 
 body {
@@ -156,6 +159,13 @@ nav {
   border-radius: 50px;
   border: 3px solid;
   transition: background 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, transform 0.4s ease;
+
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: normal;
+  cursor: pointer;
+  appearance: none;
 }
 
 .btn-pink {
@@ -229,7 +239,7 @@ nav {
 /* Cards */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(2, minmax(380px, 1fr));
     gap: 3rem;
     margin-bottom: 4rem;
 }
@@ -254,6 +264,10 @@ nav {
     border-left: 5px solid var(--hot-red);
 }
 
+.card.purple-accent {
+    border-left: 5px solid var(--hot-purple);
+}
+
 .card:hover {
     transform: translateY(-12px);
     box-shadow: 0 30px 65px rgba(0, 0, 0, 0.12);
@@ -265,6 +279,10 @@ nav {
 
 .card.pink-accent:hover {
     box-shadow: 0 30px 65px var(--shadow-pink);
+}
+
+.card.purple-accent:hover {
+    box-shadow: 0 30px 65px var(--shadow-purple);
 }
 
 .card h3 {
@@ -283,10 +301,18 @@ nav {
     color: var(--hot-red);
 }
 
+.card.purple-accent h3 {
+    color: var(--hot-purple);
+}
+
 .card p {
     color: var(--text-light);
     line-height: 1.8;
     font-size: 1.1rem;
+}
+
+.experience-card {
+    grid-column: 1 / -1;
 }
 
 /* Skills Section */
